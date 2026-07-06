@@ -24,8 +24,7 @@ RUN pacman -Syu --noconfirm \
 COPY host-exec /usr/local/libexec/host-exec
 RUN ln -s /usr/lib/flatpak-xdg-utils/xdg-open /usr/local/bin/xdg-open && \
     ln -s /usr/local/libexec/host-exec /usr/local/bin/podman && \
-    ln -s /usr/local/libexec/host-exec /usr/local/bin/flatpak && \
-    ln -s /usr/local/libexec/host-exec /usr/local/bin/toolbox
+    ln -s /usr/local/libexec/host-exec /usr/local/bin/flatpak
 
 # Workarounds
 RUN echo 'en_US.UTF-8 UTF-8' > /etc/locale.gen && locale-gen
