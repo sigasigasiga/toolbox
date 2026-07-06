@@ -34,4 +34,4 @@ ENV EDITOR=/usr/bin/nvim
 ENV MANPAGER='/usr/bin/nvim +Man!'
 
 ENV CC=clang
-ENV CXX=clang
+ENV CXX=clang++
