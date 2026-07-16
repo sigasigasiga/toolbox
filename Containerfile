@@ -6,7 +6,7 @@ RUN pacman -Syu --noconfirm \
         neovim tmux lf git htop wl-clipboard \
         `# Misc` \
         jq ripgrep \
-        awk file \
+        awk file bc \
         `# Dev` \
         clang gcc libc++ llvm \
         cmake ninja \
