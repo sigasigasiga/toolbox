@@ -17,6 +17,7 @@ RUN \
         jq ripgrep \
         awk file bc \
         openssh-clients \
+        bash-completion \
         `# Dev` \
         clang gcc-c++ libc++-devel llvm \
         cmake ninja \
