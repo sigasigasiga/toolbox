@@ -8,6 +8,9 @@ RUN zypper --non-interactive rm \
 # Packages
 RUN \
     zypper --non-interactive ref && \
+    `# upgrade the system because the repos may have an outdated snapshot` && \
+    `# and because of that the package install may fail` && \
+    zypper --non-interactive dup && \
     zypper --non-interactive install \
         `# Enable CDN` \
         openSUSE-repos-Tumbleweed \
