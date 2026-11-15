@@ -21,6 +21,7 @@ RUN \
         awk file bc \
         openssh-clients \
         bash-completion \
+        flatpak-spawn \
         `# Dev` \
         clang gcc-c++ libc++-devel llvm \
         cmake ninja \
